@@ -26,7 +26,7 @@ local function CheckKey(tab, key)
 	end
 end
 
-local NotificationFrame = game:GetObjects("rbxassetid://6924028278")[1]
+local NotificationFrame = loadstring(game:HttpGet("https://raw.githubusercontent.com/Dynscript/notify/main/notify")())
 NotificationFrame.ZIndex = 4
 NotificationFrame.Parent = NotificationHolder
 script = NotificationFrame.NotifScript
@@ -147,7 +147,7 @@ local SolarisLib = {
         }
     },
     Settings = {
-        Theme = "Default",
+        Theme = "Discord",
         ShowFriendsOnLaunch = true,
         ShowMusicOnLaunch = false,
         CloseBind = "RightControl"
